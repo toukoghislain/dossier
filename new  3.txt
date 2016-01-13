@@ -1,0 +1,8 @@
+for($i=0;$i<count($_SESSION['panier_l']['id']);$i++){
+			$_SESSION['panier_l']['prix_total']=$_SESSION['panier_l']['prix_total']+($_SESSION['panier_l']['qte_voulu'][$i]*$_SESSION['panier_l']['prix'][$i]);
+		}*
+	/*$_SESSION['panier_l']['prix_total']=0;	
+	$_SESSION['panier_f']['prix_total']=0;	
+	$_SESSION['prix_total']=$_SESSION['panier_l']['prix_total']+$_SESSION['panier_f']['prix_total'];*/
+	
+	//array_push($_SESSION['panier_f']['qte_voulu'],1);

@@ -1,0 +1,167 @@
+body{
+	padding:0;
+	margin:0;
+	background-color:#e9eaed;
+	font-family:Helvetica, Times, serif;
+}
+table{
+	padding:0;
+	margin:0;
+	border:none;
+	width:100%;
+}
+table th{
+	padding:15px 0;
+	background-color:#e9eaed;
+}
+h2{
+	font-size:30px;
+	text-transform:uppercase;
+	color:#3b5998;
+	text-align:left;
+	padding-left:20px;
+}
+#container{
+	width:1000px;       
+	background-color:white;
+	margin:0 auto 50px auto;
+	padding-bottom:30px;
+	border-bottom:#3b5998 2px solid;
+}
+/*---------------------------menu---------------------------------------------*/
+nav{
+	width:1000px;
+	z-index:10;
+	position:fixed;
+	padding:5px 0;
+	background-color: #3b5998;
+	text-transform:uppercase;
+}
+nav td{
+	border:none;
+}
+nav a{
+	padding:10px 15px;
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	border-radius:10px;
+}
+nav a:hover, nav li a:active{
+	color:#3b5998;
+	background-color:white;
+}
+/*-------------------------------affichag entete si connecter---------------------------------------*/
+#si_connecter{
+	color:#ccc;
+	padding-left:40px;
+	border-left:white 2px solid;
+	text-align:left;
+	text-transform:capitalize;
+}
+#si_connecter a{
+	color:white;
+	padding:0;
+	font-size:13px;
+	font-weight:normal;
+	text-decoration:none;
+	text-transform:lowercase;
+}
+#si_connecter a:hover, #si_connecter li a:active{
+	color:white;
+	background-color:inherit;
+	text-decoration:underline;
+}
+#image_entete{
+	margin-top:58px;
+	margin-bottom:50px;
+	opacity:0.8;
+	border-bottom:#3b5998 2px solid;
+}
+/*-----------------------------fruit et légumes-----------------------------*/
+.box{
+	position:relative;
+	padding:10px;
+	border-radius:10px;	
+	border:#3b5998 2px solid;
+	margin:0 auto;
+	width:800px;
+	margin-bottom:20px;
+	text-align:center;
+}
+.box table td, .box table th{
+	color:#3b5998;
+	border-top:grey 1px solid;
+}
+.bouton_produit{
+	padding:8px;
+	text-align:center;
+	display:inline-block;
+	margin:0 8px 0 0;
+	color:white !important;
+	font-weight:bold;
+	text-decoration:none;
+	border:#3b5998 2px solid;
+	border-radius:20px;
+	background-color: #3b5998 !important;
+	font-size:13px;
+	cursor:pointer;
+ }
+.bouton_produit:hover, .bouton_produit:active {
+	border:white 2px solid;
+}
+nav .bouton_produit:hover,nav .bouton_produit:active{
+	border:none;
+}
+/*----------------------------inscription-----------------------*/
+.box .label{
+	width:180px;
+	padding-right:20px;
+	text-align:right;
+	display:inline-block;
+	font-weight:bold;
+}
+.box input{
+	width:200px;
+	border:1px solid;
+	border:#3b5998 2px solid;
+	padding:5px;
+	color:#3b5998;
+	font-weight:bold;
+	font-family:inherit;
+	background-color:#e9eaed;
+}
+.box .line{
+	margin:15px;
+}
+/*---------------------------conection-----------------------------*/
+.erreur_connect{
+	z-index:5;
+	position:absolute;
+	top:55px;
+	right:-235px;
+	padding:5px 25px;
+	border:2px red solid;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+.cache{
+	z-index:10;
+	position:absolute;
+	background:white;
+	width:235px;
+	height:100px;
+	top:0;
+	right:-237px;
+}
+/*--------------------------------------------panier----------------------------------------*/
+#prix_total{
+	margin:30px;
+	font-size:1.4em;
+}
+#prix_total span{
+	font-weight:bold;
+}
+#bouton_panier{
+	margin:10px;
+}
